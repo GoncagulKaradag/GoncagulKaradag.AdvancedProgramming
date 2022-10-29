@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#eb95c496">
+    <meta name="Description" content="">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="1.png">
+    <link rel="icon" href="1.png">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('sw.js')
+                .then((reg) => { console.log('SW Registered', reg) })
+                .catch(console.log)
+        }
+    </script>
+    <style>
+      body {
+    margin: 0 auto;
+    font: 15px/19px Arial;
+    background-color: #eb95c496;
+  
+}
+h3 {
+    padding: 0; 
+    margin: 0; 
+    border: none; 
+}
+header {
+    height: 80px;
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #311057;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: hidden;
+}
+header img {
+    float: left;
+    margin-left: -80px;
+}
+li{
+  font-weight: bold;
+}
+header h3 {
+    float: left;
+    padding: 5px 0;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.container {
+    width: 400px;
+    margin: 0 auto;
+    height: inherit;
+    border-style: ridge;
+}
+.links {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.links h3 {
+    padding: 5px 0;
+    font-size: 20px;
+    color: #311057;
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.links h3:first-child {
+    padding-top: 10px;
+}
+.links p:first-child {
+    margin-top: 0;
+    padding-top: 15px;
+}
+.links p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
+.links ul {
+    margin-top: 0;
+    padding-top: 0;
+    list-style: none;
+    padding: 10px 5px;
+    margin-left: 15px;
+}
+.links ul hr {
+    width: 400px;
+    margin-left: -20px;
+}
+.links ul:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+.links ul li {
+    padding: 5px 0;
+}
+.links ul li a {
+    color: #9d39a7;
+    font-weight: bold;
+    text-decoration: none;
+}
+.links ul li a:hover {
+    color: #831586;
+}
+
+.inspector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+pre {
+    width: 400px;
+    margin: 10px auto;
+}
+    </style>
+    <title>Adv Prog - Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="1.png" height="35"/>
+            <h3>Advanced Programming Techniques</h3>
+        </div>
+    </header>
+    <div class="links">
+        <div class="container">
+            <br>
+            <h3>GitHub</h3>
+            <ul>
+                <li><a href="https://github.com/GoncagulKaradag/GoncagulKaradag.AdvancedProgramming" target="_blank"> -My Repository- </a></li>
+            </ul>
+            <hr>
+            <br>
+            <h3>Class Works</h3>
+            <ul>
+                <li>CW0 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW0/">Browser tools</a></li>
+                <li>CW1 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW1/">IBAN Verification</a></li>
+                <li>CW2 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW2/">Text to Object</a></li>
+                <li>CW3 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW3/">Object Inspector</a></li>
+                <li>CW3 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW3/CW3.pdf ">Object Inspector PDF</a></li>
+                <br>
+                <hr>
+                <br>
+                <h3>Homeworks</h3>
+                <br>
+                <li>HW1 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/HW1/chap4.html">Array Methods</a></li>
+                 <br>
+                 <br>
+                 <br>
+        
+            </ul>
+
+        </div>
+    </div>
+
+</body>
+</html>
