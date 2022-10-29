@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="192x192" href="../images/JS.png">
+    <title>TC Kimlik/IBAN Doğrula </title>
+
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=GlSJ67Cw4OzUHw31kc-9xk8Wiy7u_RoM91VnpRyw-DSgCfB5Yv2rpy0KUjk1Y1w0Eg71LHWe-dY0jApRpLvq8Q" charset="UTF-8"></script><style> /* CSS code in use */
+    body { max-width: 440px; }
+    #sample { overflow-x: auto; }
+    #kimlik {  
+        width: 100%;
+        border: 5px solid rgb(160, 91, 131);
+        font-size: 21px;
+    }
+    #out {
+        width: 100%;
+        border: 2px solid rgb(160, 91, 131);
+        font-size: 21px;
+        background: rgb(211, 174, 245);
+        color: black;
+        text-align: center;
+        padding: 10px;
+        
+    } button{
+        background: rgb(176, 159, 192);
+        border: 3px solid rgb(160, 91, 131);
+        font-size: 21px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2 id=title></h2>
+
+<input type=text id=kimlik>
+<button onClick="arttir()">97 eklemek için tıklayınız.</button>
+<p id=out></p>
+<hr />
+<b>Sample code</b>
+<pre id=sample></pre>
+<hr />
+<p>Ref: <a href="https://www.wikiwand.com/tr/T.C._Kimlik_Numaras%C4%B1" 
+   target="NewTab">T.C. Kimlik -- Vikipedia</a><br>
+   <a href="https://matemacik.blogspot.com/2020/03/tc-kimlik-numaras.html"
+   target="NewTab">Matemacik -- yöntem burada</a><br>
+   <a href="https://en.wikipedia.org/wiki/International_Bank_Account_Number#Validating_the_IBAN" target="NewTab">Validating the IBAN</a>
+</p>
+
+<!-- <script src="../util/Util.js"></script> -->
+<script>
+"use strict";
+//https://stackoverflow.com/questions/29275649/javascript-iban-validation-check-german-or-austrian-iban
+
+function StringCevir(str) {
+   return str.split('').reverse().join('')
+}
+
+function arttir() {
+    let deger = kimlik.value.replaceAll(/\s/g, '')
+    
+    let c = deger
+    let sayininSonKismi = ""
+    let sayininBirinciKismi = ""
+    let durum = 1
+    for (let i = c.length-1; i>=0 ;i--){
+        //console.log(c.charAt(i))
+        if(c.charAt(i) == 9){
+            durum = 0
+        }
+        if(durum == 1){
+            sayininSonKismi += c.charAt(i)
+        }
+        if(durum == 0){
+            sayininBirinciKismi += c.charAt(i)
+        }
+    }
+
+    let duzBirinciSayi = StringCevir(sayininBirinciKismi)
+    let sayiyiCevir = Number(StringCevir(sayininSonKismi))
+    //let num2 = Number(ReverseString(number2))
+    
+   // console.log(num)
+    sayiyiCevir+=97
+    //console.log(num)
+    sayiyiCevir = sayiyiCevir.toString()
+    let con = duzBirinciSayi.concat(sayiyiCevir)
+    console.log(con)
+    out.innerText = con
+}
+
+
+function verifyIBAN(s) {
+    const ASCII_0 = 48, ASCII_A = 65;
+    if (typeof s != 'string') s = String(s)
+    const E = /[A-Z]{2}[0-9]{2}[A-Z0-9]+/
+    if (!s.match(E)) return false;
+    var acc = 0;
+    function add(n) {
+        if (n == 32) return
+        // if (acc > 1000000) acc %= 97;
+        acc = n < ASCII_A ? 10 * acc + n - ASCII_0 
+            : 100 * acc + n - ASCII_A + 10;
+        acc %= 97;
+    }
+    s = s.substring(4)+s.substring(0,4)
+    for (let i=0; i<s.length; ++i) 
+        add(s.charCodeAt(i));
+    return acc == 1;
+}
+
+function verifyTC(s) {
+    // ilk test için s string olmalı
+    if (typeof s != 'string') s = String(s)
+    // 11 basamaklı sayı (ilk basamak 0 olamaz)
+    const E = /^[1-9][0-9]{10}$/
+    if (!E.test(s)) return 'hatalı'
+
+    // şimdi number[] gerekiyor
+    s = [...s].map(i => Number(i))
+    // a, b, c değerlerine bakalım
+    let a=0, b=0, c=s[10]
+    for (let i=0; i<9; i+=2) {
+        a += s[i]; b += s[i+1]
+    }
+    // (a+b)nin son basamağı c olmalı
+    if ((a+b)%10 != c) return 'a+b hata'
+
+    // (8a)nın son basamağı c olmalı
+    if (8*a%10 != c) return '8a hata'
+    return true
+}
+function report() {
+    let v = kimlik.value.replaceAll(/\s/g, '')
+    let t = ''
+    if (v.length === 11) {
+        t = verifyTC(v)
+        if (t === true) t = 'TC ✓'
+    } else {
+        t = verifyIBAN(v)? 'IBAN ✓' : 'hatalı'
+    }
+    out.innerText += '\n'+v+' '+t
+    console.log(v, t)
+}
+    title.innerText = document.title
+    sample.innerText = StringCevir+'\n'+arttir
+    kimlik.onchange = report
+    kimlik.value = '212 212 212 72'
+    report()
+</script>
+<script src="/JS/navbar.js"></script>
+
+</body>
+</html>
