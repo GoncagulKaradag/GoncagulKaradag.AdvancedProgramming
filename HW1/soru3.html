@@ -1,0 +1,17 @@
+<script src="chap4.js"></script>  
+<script>
+  
+ // Use the methods filter(), map(), forEach() on the JOURNAL array, to illustrate some queries on the data.
+ // reading eventinin gerçekleştiği günleri filtreleyerek getirelim :
+ let sorgu1=JOURNAL.filter(x=>x.events.includes("reading")&&x.events.includes("weekend"));
+ console.log(sorgu1);
+ 
+ let sorgu2=JOURNAL.map(x=>({evts:x.events,squarriel:x.squirel,evts_number:x.events.length})).filter(x=>x.evts_number>5);
+ console.log(sorgu2);
+
+ // Her gün gerceklesen eventlerin sonuncusunu silip onun yerine "Homework1" ekleyen forEach :
+ console.log("sorgu 3:// Her gün gerceklesen eventlerin sonuncusunu silip onun yerine Homework1 ekleyen forEach :")
+ JOURNAL.forEach(object=>{object.events.pop();
+                          object.events.push("Homework1")});
+console.log(JOURNAL);
+</script>

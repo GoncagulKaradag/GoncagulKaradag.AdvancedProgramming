@@ -1,0 +1,43 @@
+<script>
+    // The sum of a range sorusu ----->>>
+function range(baslangic,bitis, adim=1){
+    // Eger iki parametre girilirse; adim sayisi otomotik olarak
+    // 1'e esit olarak alianacak. Aksi halde adim sayisi kullanicinin 
+    //girdigi parametre olacak.
+if((adim >0 && baslangic >=bitis) || (adim < 0 && baslangic <= bitis)){
+    console.log("Girilen baslangic ve bitis araligi ile adim sayisi ile uyusmamaktadir!");
+
+}
+let result =[];
+if(adim > 0)
+   for (let i= baslangic; i<= bitis ; i+=adim){
+    result.push(i);
+   }
+else if(adim==0){
+    console.log("Adim sayisini 0 girdiniz, gecerli bir adim sayisini giriniz :")
+}
+else{
+    for(let i=baslangic; i>=bitis;i+=adim){
+        result.push(i);
+    }
+}
+return result;
+}
+function sum(myArray2){
+    let toplam=0;
+    for(let i=0;i<myArray2.length;i++){
+        toplam+=myArray2[i];
+    } return toplam;
+}
+console.log("Simdi de fonksiyonumuzu cagirip deneyelim:");
+let aralik=range(5,50,10);
+console.log("range(5,50,10) :",aralik);
+let toplam=sum(aralik);
+console.log("sum(range(5,50,10)):",toplam);
+
+console.log("\nBir diger ornegimiz ise :");
+let sinirlar=range(24,4,-4);
+console.log("range(24,4,-4) :",sinirlar);
+let toplam2=sum(sinirlar);
+console.log("sum(range(24,4,-4)):",toplam2);
+</script>
