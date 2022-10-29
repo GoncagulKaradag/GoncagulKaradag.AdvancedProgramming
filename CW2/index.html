@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="../images/icon192.png">
+    <title>List of Objects </title>
+
+  <style>
+    body { max-width: 500px; }
+    #inp { white-space: pre-wrap; }
+    #sample { overflow-x: auto; }
+    #out { color: blue; }
+  </style>
+</head>
+
+<body>
+
+<h2 id=title></h2>
+<b>Text input &emsp;
+<input type=button id=convert value=Convert onclick="toList()">
+</b>
+<p>
+  <textarea id=inp rows=10 cols=50 ></textarea>
+</p>
+<b>JSON output</b>
+<pre id=out></pre>
+<hr />
+<b>Sample code</b>
+<pre id=sample></pre>
+<hr />
+<p>Ref: 
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Examples" 
+   target="NewTab">Rest Parameters</a>
+</p>
+
+<script>
+"use strict";
+function toList(str) {
+  function toObject(x) {
+    let b = {}
+    for (let [i,s] of x.split('\t').entries())
+      b[keys[i]] = (isNaN(s)? s : Number(s))
+    return b
+  }
+    if (str) inp.value = str
+    else str = inp.value
+    let [d0, ...data] = str.split('\n')
+    let keys = d0.split('\t')
+    console.log("Keys:", keys)
+    let a = data.map(toObject)
+    out.innerText = JSON.stringify(a, '' ,2)
+    console.table(a)
+    return a
+}
+const PLANET = 
+`Name	Diam	Mass	Radius	Period
+Mercury	0.382	0.06	0.40	0.24
+Venus	0.949	0.82	0.72	0.62
+Earth	1.000	1.00	1.00	1.00
+Mars	0.532	0.11	1.52	1.88
+Jupiter	11.209	317.80	5.20	11.86
+Saturn	9.449	95.20	9.54	29.46
+Uranus	4.007	14.60	19.22	84.01
+Neptune	3.883	17.20	30.06	164.80`,
+
+MOUNT = `isim	yas	memleket
+Gonca	24	Sivas
+Yagmur 	23	Erzincan
+Berrak	20	Bursa
+Cansu	22	Ankara
+Selda  	25	Bursa
+Melis	22	Ankara
+Mihrace	23	Karabuk`
+
+    title.innerText = document.title
+    sample.innerText = toList
+    inp.value = MOUNT
+    //toList()  //array of objects
+
+ console.log("Derste yaptigim sorgular asagidadir. Console uzerinde calismaktadir.")
+ let Verilerim=toList()
+ console.log("Kişilerin yaşlarının beş ile çarpılmış halini tutan array :")
+ let value1=Verilerim.map(x=>x.yas*5)
+ console.log(value1)
+ console.log("Memleketi Bursa olan kişileri filtreleyerek getir :")
+ let value2=Verilerim.filter(x=>x.memleket=="Bursa")
+ console.log(value2)
+ console.log("Yaşı 22 den daha büyük olan kişileri filtreleyerek getir :")
+ let value3=Verilerim.filter(x=>x.yas>22)
+ console.log(value3)
+ console.log("İsimlerin yanina kişisi ekleyerek isimleri getir :")
+ let value4=Verilerim.map(x=>x.isim.concat("  kişisi"))
+ console.log(value4)
+
+</script>
+</body>
+</html>
