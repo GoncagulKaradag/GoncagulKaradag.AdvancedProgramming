@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="../images/icon192.png">
     <title>Inspector </title>
 
     <style>
@@ -25,7 +24,7 @@
 <script src="https://maeyler.github.io/JS/sss/inspector.js"></script>
 <script src="chap4.js"></script>
 <script src="chap6.js"></script>
-<script src="../exam/Quiz.js"></script>
+<script src="Quiz.js"></script>
 <script src="Async.js"></script>
 <script>
 "use strict";
@@ -81,7 +80,26 @@ function init() {
     } catch(e) {
         reportError(e);
     }
+    console.log("Bu ödevde yaptığım sorgular :");
+    console.log("Öncelikle a arrayi :",a);
+    console.log("a.at(2) :",a.at(2));
+    console.log("a.concat([58,34,16]) :",a.concat([58,34,16]));
+    console.log("d.getFullYear() :",d.getFullYear());
+    console.log("d.getMinutes() :",d.getMinutes());
+    console.log("d.getMonth() :",d.getMonth());
+    console.log("Öncelikle s stringi :",s);
+    console.log("s.includes('s') :",s.includes('s'));
+    console.log("s.includes('g')",s.includes('g'));
+    // console.log(window.alert("Bu bir mesajdır."));
+    console.log("MENU.deepEqual([58,34,16],[58,34,16]) :",MENU.deepEqual([58,34,16],[58,34,16]));
+    console.log("Hem reading eventinin hem de weekend eventinin gerçekleştiği günleri getiriniz :")
+    console.log(JOURNAL.filter(x=>x.events.includes("reading")&&x.events.includes("weekend")))
+    console.log("Hem sincap olunan hem de o günki event sayısı 3 den büyük olan günleri filtreleyerek getiriniz :")
+    console.log(JOURNAL.filter((x=>(x.squirrel==true)&&(x.events.length>3))));
+    console.log("Her günün eventlerini ve event sayılarını map fonksiyonu sayesinde getirelim :");
+    console.log(JOURNAL.map(x=>({evts:x.events,evts_number:x.events.length})));
+
+    
 </script>
-<script src="/2022/navbar.js"></script>
 </body>
 </html>
