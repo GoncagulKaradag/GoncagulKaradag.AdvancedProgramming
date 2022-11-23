@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+
+    <!-- <div id="image">
+
+        </div> -->
+    <br />
+    <img id="my-img" height="150" />
+    <br />
+    <button onclick="StartButton()">Start</button>
+    <button onclick="Pause()">Pause</button>
+    <button onclick="Stop()">Stop</button>
+    <button id="nextButton" onclick="GoNext()">Next</button>
+    <button id="prevButton" onclick="GoPrev()">Prev</button>
+  </body>
+
+  <script>
+    let numberOfImage = 15;
+    let index = 1;
+    let myTimeout;
+    let timer_is_working = false; // setTimeout fonk. calisip calismadigini kontrol eden degisken
+    let buttonPressed=false;
+    let nextButton = document.querySelector("#nextButton");
+    let prevButton = document.querySelector("#prevButton");
+    let img = document.querySelector("#my-img");
+    function StartButton() {
+      index=1;
+      Start();
+    }
+
+    function Start() {
+      if (timer_is_working ) return;
+      NextAndPrevButtonsPassive();
+      myTimeout = setTimeout(updateFunc, 250); // setTimeout ile 250 msec sonra updateFunc calistirir.
+      buttonPressed=false;
+      // myTimeout atimin sonsuz ilerleyisini durdurabilmem icin kullandigim kontrol degiskeni.
+      timer_is_working = true;
+    }
+
+    function updateFunc() {
+      fetch("../HW3/" + index + ".png")
+        .then((response) => response.blob())
+        .then((imageBlob) => {
+          var urlCreator = window.URL || window.webkitURL;
+          var imageUrl = urlCreator.createObjectURL(imageBlob);
+          img.src = imageUrl;
+        });
+
+      index = (index % numberOfImage) + 1; // butun gorselleri sirayla indexte tutacagim.
+      timer_is_working = false;
+      console.log(index);
+      img.style.marginLeft=index*50+"px"; // ati saga dogru kaydirma efekti icin gerekiyordu.
+      Start();
+    }
+    function Pause() {
+      buttonPressed=!buttonPressed; // basta false olan buttonPressed true olur.
+      
+      if(buttonPressed){
+        clearTimeout(myTimeout); // setimeout fonksiyonunu durdurmus böylece updateFunc durdurmus oluyorum.
+        timer_is_working = false;
+        NextAndPrevButtonsActive();
+      }
+      else{
+        
+        updateFunc();
+      }
+      console.log(buttonPressed);
+
+    }
+    function Stop() {
+      clearTimeout(myTimeout);
+      timer_is_working = false;
+      NextAndPrevButtonsActive();
+    }
+    function GoNext() {
+      index = ((index) % numberOfImage) + 1;
+      GoIndexSprite(index);
+    }
+    function GoPrev() {
+      index = ((index) % numberOfImage) -1;
+      if(index<=0) index+=numberOfImage;
+      GoIndexSprite(index);
+    }
+    function GoIndexSprite(target) {
+      fetch("../HW3/" + target + ".png")
+        .then((response) => response.blob())
+        .then((imageBlob) => {
+          var urlCreator = window.URL || window.webkitURL;
+          var imageUrl = urlCreator.createObjectURL(imageBlob);
+          img.src = imageUrl;
+        });
+        console.log(target)
+      img.style.marginLeft=index*50+"px";
+
+    }
+    function NextAndPrevButtonsActive() {
+      nextButton.disabled = false;
+      prevButton.disabled = false;
+    }
+        function NextAndPrevButtonsPassive() {
+      nextButton.disabled = true;
+      prevButton.disabled = true;
+    }
+  </script>
+</html>
