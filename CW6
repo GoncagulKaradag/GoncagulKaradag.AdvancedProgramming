@@ -1,0 +1,83 @@
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="../images/icon192.png">
+  <title>GitHub Users</title>
+  <style>
+    body {
+        max-width: 440px;
+    }
+    img {
+        padding-right: 12px; 
+        width: 250px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2 id=title></h2>
+<input type=text id=usr value=Ulengin onChange="readUser()">
+<p id=out></p>
+<hr />
+<b>Sample code</b>
+<pre id=sample></pre>
+<hr />
+<p>Ref: <a href="https://developer.github.com/v3/#rate-limiting" 
+   target=NewTab>GitHub Developer</a>
+</p>
+
+<script>
+"use strict";
+function error(t) {
+    out.style.color = 'red'
+    out.innerText = t; throw t
+}
+async function toJSON(url) {
+    let r = await fetch(url)
+    if (!r.ok) error(r.statusText)
+    return r.json()
+}
+async function readUser() {
+    const BR = "<BR>", 
+      URL = "https://api.github.com/users/"
+    let u = await toJSON(URL+usr.value)
+    if (!u || !u.login) 
+      error(usr.value+' not found')
+    //u.login is the same as usr.value
+    out.style.color = ''
+    out.innerHTML = ''
+    //start with a tiny image
+    let i = document.createElement("img")
+    i.src = u.avatar_url
+    i.align = "left"
+    out.appendChild(i)
+    //add name and location
+    let d = document.createElement("div")
+    d.style = "width:200px"
+    if(u.name)
+      d.innerHTML += "<h1>"+u.name+"</h1>";
+    if(u.name)
+      d.innerHTML += "<h2>"+u.login+"</h2>";
+    d.innerHTML+=u.company+BR
+    d.innerHTML+=u.location+BR
+    if(u.blog){
+      let b = document.createElement("a")
+      b.href = u.blog
+      b.target = "NewTab"
+      b.innerText = u.blog
+      d.appendChild(b)
+    }
+    out.appendChild(d)
+}
+    title.innerText = document.title
+    sample.innerText = toJSON +'\n'+ readUser
+    out.innerText = "Reading data"
+    readUser()
+</script>
+
+</body>
+</html>
+
+
