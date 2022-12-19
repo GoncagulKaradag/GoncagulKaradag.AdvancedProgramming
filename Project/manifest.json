@@ -1,0 +1,13 @@
+{
+    "name": "JavaScript samples",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "cyan",
+    "icons": [
+      {
+        "src": "JS.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
