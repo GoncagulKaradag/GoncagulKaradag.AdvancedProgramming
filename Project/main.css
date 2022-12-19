@@ -1,0 +1,182 @@
+body {
+    font-family: "Langar", cursive;
+    background: #b0cbd3;
+  }
+  
+  .bigBox {
+    background: #90a1b1;
+    display: flex;
+    height: 100%;
+    width: 95%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border: 2px solid rgb(171, 193, 223);
+    border-radius: 5px;
+  }
+  
+  .box {
+    background: #f1f1e8;
+    display: inline-block;
+  
+    border: 2px solid#b0cbd3 ;
+    align-items: center;
+    height: 100%;
+    border-radius: 5px;
+    width: 48.5%;
+    margin-right: 1.5%;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15px;
+    width: 60%;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #90a1b1;
+  
+    font-size: 1.25rem;
+    color: #90a1b1;
+  }
+  
+  .btn:hover {
+    border: 2px solid white;
+    color: white;
+    background: #0f51ca;
+  }
+  
+  .inBox {
+    width: 96%;
+  
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 100%;
+  }
+  .foods {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    margin-right: 5px;
+    height: 80%;
+  }
+  
+  .miktar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    margin-left: 5px;
+    height: 80%;
+  }
+  .secondBox {
+    background: #f1f1e8;
+    width: 48.5%;
+    margin-left: 1.5%;
+    border: 2px solid #b0cbd3;
+    border-radius: 5px;
+  }
+  
+  table {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+    font-size: 10px;
+  
+    border-collapse: collapse;
+    height: 90%;
+    margin-top: 2.5%;
+    border: 2px solid #90a1b1;
+  }
+  
+  td {
+    border: 1px solid #90a1b1;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    border: 1px solid #bfdcae;
+  
+    color: #1c1aa1;
+    font-size: 14px;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #90a1b1;
+    color: #456268;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #456268;
+    text-align: center;
+  }
+  h2 {
+    font-style: italic;
+    color: #456268;
+  
+    text-align: center;
+  }
+  
+  h3 {
+    color: #1c1aa1;
+  }
+  
+  .combobox {
+    margin-bottom: 10px;
+    height: 22px;
+    border: 2px solid #90a1b1;
+    border-radius: 10px;
+  }
+  .iconClass {
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-content: center;
+  
+    font-style: italic;
+    text-align: center;
+    border: 2px solid #90a1b1;
+    border-radius: 10px;
+    margin-top: 1.5%;
+  }
+  
+  .miktarClass {
+    margin-bottom: 10px;
+    margin-right: 1px;
+    border: 2px solid #90a1b1;
+    border-radius: 10px;
+  }
+  
+  .start {
+    width: 100%;
+  }
+  
+  #btn2 {
+    width: 100%;
+    height: 30px;
+    border: 2px solid #dfec2a;
+    background: white;
+    font-size: 1rem;
+    color: #90a1b1;
+    border-radius: 10px;
+    margin-bottom: 2.5%;
+    font-weight: 600;
+  }
+  
+  #btn2:hover {
+    border: 2px solid white;
+    color: white;
+    background: #90a1b1;
+  }
+ 

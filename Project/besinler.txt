@@ -1,0 +1,108 @@
+Besin seciniz	0	0	0	0
+Omlet	184	2.31 14.44	12.16
+Patates(Kızartma)	312	41.44	14.73	3.43
+Tost(Karışık)	302 34.06  13.56  10.73
+Poğaça(Peynirli)	391	30.57	26.14	8.71
+Börek(Kıymalı)	248	28.83	10.39	9.2
+Açma	414	38.43	25.99	6.43
+Yulaf(ezmesi)	389	66.27	6.9	16.89
+Yulaf	370	  67	6.30	16
+Çorba(mercimek)	46	8.28	0.2	2.46
+Çorba(yayla)	47	6.47	1.61	1.46
+Çorba(Ezogelin)	45	5.95	1.17	1.89
+Çorba(Mantar)	80	3.48	7.51	1.28
+Çorba(Tavuk)	55	3.42	1.96	3.97
+Köfte(içli)	233	32.28	6.83	9.87
+Köfte(mercimek)	140	18.88	4.84	4.93
+Çiğköfte	181	32.91	4.02	4.62
+Pilav(sade)	167	27.34	5.09	2.44
+Pilav(tavuklu)	153	21.26	4.1	7.24
+Karnıyarık	55	2.53	3.54	3.22
+Dolma(Karışık)	292	34.25	11.55	11.63
+Cacık	41	3.15	2.21	2.03
+Hamburger	165	19.88	6.12	7.02
+Köfte	168	4.92	10.47	13.05
+Cheesecake	344	41.01	15.56	6.5
+Sütlaç	105	21.58	1.36	1.78
+Kek	345	47.06	13.08	6.34
+Pasta(Meyveli)	172	27.4	4.06	4.25
+Krep	187	27.87	4.64	7.55
+Pankek	243	33.11	7.65	8.23
+Makarna(sade)	153	30.86	0.93	5.8
+Makarna(Kıymalı)	98	11.9	3.36	4.82
+Makarna(Fettucini)	289	50.95	3.79	10.39
+Tavuk(Körili)	143	5.25	4.65	18.8
+Salata(Sezar)	128	6.6	4.99	13.27
+Salata(Mevsim)	30	3.49	1.2	0.94
+Salata(Çoban)	52	7.55	1.71	1.45
+Pizza(Karışık)	186	30.51	4.33	5.84
+Ketçap	110	24	0.3	1.2
+Mayonez	390	23.9	33.4	0.9
+Hardal	269	11.01	20.98	9.34
+Badem	570	3.7	54.1	18.7
+Balık	205	0	12	22
+Enginar(Pişmiş)	53	11.95	0.34	2.89
+Kereviz(Pişmiş)	27	5.9	0.19	0.59
+Fasulye(Zeytinyağlı)	7.88	0.28	1.89
+Sarma(Zeytinyağlı)	96	17.82	1.32	3.37
+İskender	151	15.54	5.36	9.65
+Adana Dürüm	163	7.51	22.75	13.91
+Urfa Dürüm	156	8.3	25.11	13.91
+Tavuk Kanat	191	0	12.85	17.52
+Tantuni	168	8.42	22.26	19.29
+Köfte Ekmek	167	19.48	4.53	12.1
+Beyti Kebabı	196	11	12.29	9.65
+Acılı Ezme	81	12.52	2.76	1.5
+Kornişon Turşu	15	1.73	0.5	1.32
+Turşu Suyu	12	1.82	0.1	0.96
+Brokoli(Pişmiş)	9	1.87	0.19	3.16
+Avakado	160	8.53	14.66	2
+Bezelye	81	14	0.4	5
+Bulgur	342	75.87	1.33	12.29
+Domates	17	3.9	0.2	0.9
+Ekmek	256	52.8	0.9	8.1
+Et	251	0	12	23.5
+Fasulye	347	63	1.2	21
+Fındık	628	17	61	15
+Fıstık	567	16	49	26
+Ceviz	654	14	65	15
+Kaju	553	30	44	18
+Havuç	41	10	0.2	0.9
+Hindi	188	0.1	7	26
+Ispanak	23	3.63	0.39	2.86
+Kahve	7	0.06	0.52	0.42
+Karnabahar	24	5	0.3	1.9
+Lahana	24	6	0.1	1.3
+Marul	14	2.9	0.2	1.4
+Nohut	364	61	6	19
+Peynir	402	1.3	33	25
+Pirinç	360	79.34	0.58	6.61
+Pırasa	60	14	0.3	1.5
+Salatalık	15	3.63	0.11	0.65
+Süt	42	5	1	3.4
+Tavuk	239	0	14	22.5
+Tereyağı	716	0.1	81	0.9
+Üzüm	66	17	0.4	0.6
+Yağ	884	0	100	0	
+Zeytin	115	6	11	0.8
+Zeytinyağı	884	0	100	0
+Vişne	61	12.02	0.45	0.59
+Portakal	46	11.54	0.21	0.7
+Mandalina	53	13.34	0.31	0.81
+Nar	83	18.7	1.17	1.67
+Limon	43	8.73	0.36	0.44
+Muz	88	23	0.3	1.1
+Ayva	39	7.32	0.5	0.4
+İncir	74	19.18	0.3	0.75
+Kivi	61	14.66	0.52	0.14
+Elma	52	14	0.2	0.3
+Armut	57	15.23	0.14	0.36
+Kiraz	63	16.01	0.2	1.06
+Karpuz	30	8	0.2	0.6
+Kavun	33	8	0.2	0.8
+Şeftali	39	9.54	0.25	0.91
+Ayran	37	2.71	2	1.98
+Şalgam(içecek)	5	1.06	0.11	0.52
+Kola	61	10.85	0	0
+Meyve Suyu	58	28.4	0	0.7
+Kefir	52	3.2	3.2	2.7

@@ -1,0 +1,40 @@
+Aktivite seçiniz	0	
+Yürüyüş(Yavaş)	2		
+Yürüyüş(Orta)	4	
+Yürüyüş(Hızlı)	5		
+Koşu(Hafif 8km/h)	10
+Koşu(Orta 11km/h)	14
+Koşu(Hızlı 21km/h)	22
+Fitness	8
+Eliptik Bisiklet(Orta)	11
+Pilates	4
+İp Atlamak(Orta)	12
+İp Atlamak(Hızlı)	16
+Trambolin	5
+Kayak	9
+Yüzmek	10
+Basketbol Oynamak	10
+Voleybol Oynamak	7
+Masa Tenisi	5
+Tenis	9
+Bisiklet Sürmek	9
+Kondisyon Bisikleti	11
+Okçuluk	5
+At Binicilik	6
+Ağırlık Çalışması	7.04
+Kürek Çekmek	8.6
+Paten Kaymak	6.03
+Dans(Hızlı)	8.4
+Badminton	6
+Sörf	5.6
+Kriket(orta)	6.1
+Boks(Yoğun)	14.8
+Karete(Yoğun)	8.6
+Judo(Yoğun)	9.1
+Tırmanma(Yoğun)	9.6
+Zumba(Yoğun)	8.5
+Taekwondo(Yoğun)	8.2
+Koşu Bandı(yoğun)	9.5
+Dalış(orta)	7.4
+
+

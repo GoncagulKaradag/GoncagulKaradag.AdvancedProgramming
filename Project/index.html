@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" media="(max-width:945px" ) href="mobile.css">
+
+
+    <h1> GÜNLÜK KALORİ SAYACI </h1>
+    <h2>YAKILAN KALORİ HESABI </h2>
+
+    <div id="bigScreen" class="bigBox">
+        <div class="box">
+
+
+            <div class="inBox">
+                <div class="foods">
+
+                    <h3 style="text-align: center;">YAPILAN AKTİVİTE</h3>
+
+                    <select class="combobox" id="sporcombobox1" name="öğünler"> </select>
+                    <select class="combobox" id="sporcombobox2" name="öğünler"></select>
+                    <select class="combobox" id="sporcombobox3" name="öğünler"></select>
+                    <select class="combobox" id="sporcombobox4" name="öğünler"></select>
+                    <select class="combobox" id="sporcombobox5" name="öğünler"></select>
+
+                </div>
+
+                <div class="miktar">
+                    <h3 style="text-align: center;">SÜRE (dk)</h3>
+
+                    <input class="miktarClass" id="sporsure1" value="1" type="number">
+                    <input class="miktarClass" id="sporsure2" value="1" type="number">
+                    <input class="miktarClass" id="sporsure3" value="1" type="number">
+                    <input class="miktarClass" id="sporsure4" value="1" type="number">
+                    <input class="miktarClass" id="sporsure5" value="1" type="number">
+                </div>
+
+
+
+            </div>
+            <button style="font-family: 'Langar', cursive;" class="btn" id="btn1"
+                onclick="calculateSport()">Hesapla</button>
+
+        </div>
+
+        <div class="secondBox">
+            <table>
+                <tr>
+                    <th>YAPILAN AKTİVİTE</th>
+                    <th>SÜRE</th>
+                    <th>YAKILAN KALORİ</th>
+
+                </tr>
+                <tr id="sportr1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="sportr2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="sportr3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="sportr4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="sportr5">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="sportr6">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+    <h2>ALINAN KALORİ HESABI</h2>
+
+    <div id="bigScreen" class="bigBox">
+        <div class="box">
+
+
+            <div class="inBox">
+                <div class="foods">
+
+                    <h3 style="text-align: center;">BESİNLER</h3>
+
+                    <select class="combobox" id="besincombobox1" name="öğünler"> </select>
+                    <select class="combobox" id="besincombobox2" name="öğünler"></select>
+                    <select class="combobox" id="besincombobox3" name="öğünler"></select>
+                    <select class="combobox" id="besincombobox4" name="öğünler"></select>
+                    <select class="combobox" id="besincombobox5" name="öğünler"></select>
+
+                </div>
+
+                <div class="miktar">
+                    <h3 style="text-align: center;">MİKTAR (g)</h3>
+
+                    <input class="miktarClass" id="besinmiktar1" value="1" type="number">
+                    <input class="miktarClass" id="besinmiktar2" value="1" type="number">
+                    <input class="miktarClass" id="besinmiktar3" value="1" type="number">
+                    <input class="miktarClass" id="besinmiktar4" value="1" type="number">
+                    <input class="miktarClass" id="besinmiktar5" value="1" type="number">
+                </div>
+            </div>
+            <button style="font-family: 'Langar', cursive;" class="btn" id="btn1"
+                onclick="calculateBesin()">Hesapla</button>
+
+        </div>
+
+        <div class="secondBox">
+            <table>
+                <tr>
+                    <th>BESİN</th>
+                    <th>MİKTAR</th>
+                    <th>CAL</th>
+                    <th>CARB</th>
+                    <th>FAT</th>
+                    <th>PROTEIN</th>
+                </tr>
+                <tr id="besintr1">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="besintr2">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="besintr3">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="besintr4">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="besintr5">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr id="besintr6">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </div>
+
+    <div id="bigScreen" class="bigBox">
+        <div class="box">
+            <form name="bmiForm">
+
+                <h2>VÜCUT KİTLE İNDEKSİ HESABI</h2>
+
+
+                <p style="margin: 18px;">
+                    Weight:
+                    <input name="wght" class="miktarClass" type="number" min="35" max="110" value="90"
+                        oninput="show_weight(this.value)" />
+                    <span></span> kg
+                </p>
+
+
+
+
+                <p style="margin: 18px;">
+                    Height:
+                    <input name="hght" class="miktarClass" type="number" min="135" max="200" value="183"
+                        oninput="show_height(this.value)" />
+                    <span></span> cm
+                </p>
+
+
+                <input class="btn" type="button" value="Calculate BMI" id="btn1" style="font-family: 'Langar', cursive;"
+                    onclick="calculateBmi()">
+
+               
+
+
+
+            </form>
+        </div>
+        <div class="secondBox">
+           Vücut Kitle İndeksiniz : <span id="mybmi"></span>
+            <p>
+            Durumunuz :    <span id="evaluationMessage"></span>
+              </p>
+              <p>
+                Net Kalori :     <span id="netcalLabel"></span>
+                  </p>  
+                  <p>
+                    <span id="finalMessage"></span>
+                      </p>  
+        </div>
+
+    </div>
+
+
+</body>
+<script>
+    "use strict";
+    let foodArray = [];
+    class Food {
+        constructor(name, cal, carb, fat, protein) {
+
+            this.name = name;
+            this.cal = cal;
+            this.carb = carb;
+            this.fat = fat;
+            this.protein = protein;
+
+        }
+        toString() {
+            return this.name + " " + this.cal + " " + this.carb + " " + this.fat + " " + this.protein;
+        }
+        static fromString(s) {
+            return new Food(...s.split('\t'))
+        }
+    }
+    class Sport {
+        constructor(name, cal) {
+
+            this.name = name;
+            this.cal = cal;
+
+
+        }
+        toString() {
+            return this.name + " " + this.cal;
+        }
+        static fromString(s) {
+            return new Sport(...s.split('\t'))
+        }
+    }
+    let foodMap = new Map(); //global
+    let sportMap = new Map(); //global
+    let totalHarcananKalori=0, totalAlinanKalori=0
+
+    function makeData(txt, Maker, map) {
+        map.clear()
+        for (let line of txt.split('\n')) {
+            if (!line) continue
+            let p = Maker.fromString(line)
+            map.set(p.name, p)
+        }
+
+        return map;
+    }
+
+    function getFood() {
+        fetch("besinler.txt").then(r => r.text())
+            .then(x => makeData(x, Food, foodMap))
+    }
+    function getFoodList() {
+        foodArray = [];
+        foodMap.forEach(p => {
+            foodArray.push(p);
+
+        });
+    }
+    function getSports() {
+        fetch("sporlar.txt").then(r => r.text())
+            .then(x =>{ makeData(x, Sport, sportMap); })
+    }
+    function getSportList() {
+        sportArray = [];
+        sportMap.forEach(p => {
+            sportArray.push(p);
+
+        });
+    }
+
+    function init() {
+        totalAlinanKalori=0;
+        totalHarcananKalori=0;
+
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            clearCombobox("besincombobox" + temp.toString());
+            clearMiktar("besinmiktar" + temp.toString());
+        }
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            makeFoodCombobox("besincombobox" + temp.toString());
+        }
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            clearCombobox("sporcombobox" + temp.toString());
+            clearMiktar("sporsure" + temp.toString());
+        }
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            makeSportCombobox("sporcombobox" + temp.toString());
+        }
+
+        calculateSport();
+    }
+
+    function makeFoodCombobox(id) {
+
+        foodMap.forEach(f => {
+            document.getElementById(id).innerHTML += "<option >" + f.name + "</option>"
+        });
+
+    }
+    function makeSportCombobox(id) {
+
+sportMap.forEach(f => {
+    document.getElementById(id).innerHTML += "<option >" + f.name + "</option>"
+});
+
+}
+
+    function clearCombobox(id) {
+        document.getElementById(id).innerHTML = "";
+    }
+
+    function clearMiktar(id) {
+        let temp = 0;
+        document.getElementById(id).value = Number(temp);
+    }
+
+
+
+    function calculateBesin() {
+
+        if (besinMiktarControl() == false) {
+
+            let totalMiktar = 0;
+            
+            let totalCarb = 0;
+            let totalFat = 0;
+            let totalProtein = 0;
+
+
+
+            for (let i = 1; i < 6; i++) {
+                let temp = i;
+                let food = document.getElementById("besincombobox" + temp.toString()).value
+                let miktar = document.getElementById("besinmiktar" + temp.toString()).value
+                totalMiktar += Number(miktar)
+                let name = (foodMap.get(food).name)
+                let kalori = (Number(foodMap.get(food).cal) * (miktar / 100)).toFixed(1)
+                totalAlinanKalori += Number(kalori)
+                let karbonhidrat = (Number(foodMap.get(food).carb) * (miktar / 100)).toFixed(1)
+                totalCarb += Number(karbonhidrat)
+                let yag = (Number(foodMap.get(food).fat) * (miktar / 100)).toFixed(1)
+                totalFat += Number(yag);
+                let protein = (Number(foodMap.get(food).protein) * (miktar / 100)).toFixed(1)
+                totalProtein += Number(protein);
+                document.getElementById("besintr" + temp.toString()).innerHTML = "<td>" + name + "</td>" + "<td>" + miktar + "</td>" + "<td>" + kalori + "</td>" + "<td>" + karbonhidrat + "</td>" + "<td>" + yag + "</td>" + "<td>" + protein + "</td>"
+
+            }
+
+
+            document.getElementById("besintr6").innerHTML = "<td>" + "TOTAL" + "</td>" + "<td>" + totalMiktar.toFixed(1) + "</td>" + "<td>" + totalAlinanKalori.toFixed(1) + "</td>" + "<td>" + totalCarb.toFixed(1) + "</td>" + "<td>" + totalFat.toFixed(1) + "</td>" + "<td>" + totalProtein.toFixed(1) + "</td>"
+
+        }
+
+        else {
+            alert("Miktar değelerini kontrol ediniz...");
+        }
+
+    }
+
+    function calculateSport() {
+
+        if (sporSureControl() == false) {
+
+            let totalSure = 0;
+          
+            for (let i = 1; i < 6; i++) {
+                let temp = i;
+                let sport = document.getElementById("sporcombobox" + temp.toString()).value
+                let sure = document.getElementById("sporsure" + temp.toString()).value
+                totalSure += Number(sure)
+                let name = (sportMap.get(sport).name)
+                let kalori = (Number(sportMap.get(sport).cal) * (sure)).toFixed(1)
+                totalHarcananKalori += Number(kalori)
+
+                document.getElementById("sportr" + temp.toString()).innerHTML = "<td>" + name + "</td>" + "<td>" + sure + "</td>" + "<td>" + kalori + "</td>"
+
+            }
+
+
+            document.getElementById("sportr6").innerHTML = "<td>" + "TOTAL" + "</td>" + "<td>" + totalSure.toFixed(1) + "</td>" + "<td>" + totalHarcananKalori.toFixed(1) + "</td>"
+
+        }
+
+        else {
+            alert("Miktar değelerini kontrol ediniz...");
+        }
+
+    }
+
+
+    function besinMiktarControl() {
+        let isNegative = false
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            let miktar = document.getElementById("besinmiktar" + temp.toString()).value;
+            if (Number(miktar < 0)) {
+                isNegative = true;
+            }
+        }
+
+        return isNegative;
+    }
+
+    function sporSureControl() {
+        let isNegative = false
+        for (let i = 1; i < 6; i++) {
+            let temp = i;
+            let miktar = document.getElementById("sporsure" + temp.toString()).value;
+            if (Number(miktar < 0)) {
+                isNegative = true;
+            }
+        }
+
+        return isNegative;
+    }
+
+    function calculateBmi() {
+        var weight = document.bmiForm.wght.value;
+        var height = (document.bmiForm.hght.value) / 100;
+        var bmi = (weight) / Math.pow(height, 2);
+        var bmi_output = document.getElementById("mybmi");
+        var message_output = document.getElementById("evaluationMessage");
+        var net_kalori_output = document.getElementById("netcalLabel");
+        var final_message_output = document.getElementById("finalMessage");
+        var net_kalori = totalAlinanKalori-totalHarcananKalori;
+        var fixed_bmi = bmi.toFixed(1);
+
+        bmi_output.innerHTML = " " + fixed_bmi;
+
+
+        if (fixed_bmi <= 18.5) {
+            message_output.innerHTML = "Zayıf"
+        } if (fixed_bmi >= 18.5 && fixed_bmi <= 24.9) {
+            message_output.innerHTML = "Normal Kilolu"
+        } if (fixed_bmi >= 25 && fixed_bmi <= 29.9) {
+            message_output.innerHTML = "Fazla Kilolu"
+        } if (fixed_bmi >= 30 && fixed_bmi <= 34.9) {
+            message_output.innerHTML = "I.Derece obez"
+        } if (fixed_bmi >= 35 && fixed_bmi <= 39.9) {
+            message_output.innerHTML = "II.Derece obez"
+        } if (fixed_bmi >= 40) {
+            message_output.innerHTML = "III.Derece morbid obez"
+        }
+        net_kalori_output.innerHTML=net_kalori;
+
+        if(fixed_bmi>=25){
+            final_message_output.innerHTML="Durumunuz "+message_output.innerHTML+"!  Lütfen bir hekime danışınız. Hekim eşliğinde diyetinizi sürdürünüz."
+        }
+    }
+
+    getFood();
+    getSports();
+    setTimeout(init, 1000);
+</script>
+
+</html>
