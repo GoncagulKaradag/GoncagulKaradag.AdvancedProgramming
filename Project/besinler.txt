@@ -1,7 +1,6 @@
 Besin seciniz	0	0	0	0
-Omlet	184	2.31 14.44	12.16
-Patates(Kızartma)	312	41.44	14.73	3.43
-Tost(Karışık)	302 34.06  13.56  10.73
+Omlet	184	2.31	14.44	12.16
+Tost(Karışık)	302	34.06	13.56	10.73
 Poğaça(Peynirli)	391	30.57	26.14	8.71
 Börek(Kıymalı)	248	28.83	10.39	9.2
 Açma	414	38.43	25.99	6.43
@@ -43,7 +42,7 @@ Badem	570	3.7	54.1	18.7
 Balık	205	0	12	22
 Enginar(Pişmiş)	53	11.95	0.34	2.89
 Kereviz(Pişmiş)	27	5.9	0.19	0.59
-Fasulye(Zeytinyağlı)	7.88	0.28	1.89
+Fasulye(Zeytinyağlı)	77.88	0.28	1.89	2.43
 Sarma(Zeytinyağlı)	96	17.82	1.32	3.37
 İskender	151	15.54	5.36	9.65
 Adana Dürüm	163	7.51	22.75	13.91
