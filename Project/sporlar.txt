@@ -12,12 +12,10 @@ Pilates	4
 İp Atlamak(Hızlı)	16
 Trambolin	5
 Kayak	9
-Yüzmek	10
 Basketbol Oynamak	10
 Voleybol Oynamak	7
 Masa Tenisi	5
 Tenis	9
-Bisiklet Sürmek	9
 Kondisyon Bisikleti	11
 Okçuluk	5
 At Binicilik	6
@@ -36,5 +34,27 @@ Zumba(Yoğun)	8.5
 Taekwondo(Yoğun)	8.2
 Koşu Bandı(yoğun)	9.5
 Dalış(orta)	7.4
-
-
+Jimnastik(Pasif)    5.4
+Jimnastik(Müsabaka) 8
+Futbol Oynamak	9
+Aeorobik(Düşük Tempo)   6
+Aeorobik(Yüksek Tempo)  8
+Aeorobik(Suda)  6.8
+Hatha(Yoga) 4.3
+Bisiklet(19-22 km/h)    8.1
+Bisiklet(22-26 km/h)    10.4
+Bisiklet(26-30 km/h)    13.5
+Bisiklet(30-34 km/h)    18
+Yüzmek(Kuvvetli)	11
+Yüzmek(Sırtüstü)	9
+Yüzmek(Kurbağalama)	11
+Yüzmek(Crawl)	13
+Yüzmek(Kelebek)	11.9
+Tai Chi 5
+Bowling Oynamak 4.1
+Aletli Kürek    7
+Amerikan Futbolu    7.1
+Merdiven Çıkmak 6
+Güreşmek    6.9
+Ayakta Durmak   2
+Doğa Yürüyüşü   4.7
