@@ -53,7 +53,7 @@ Yüzmek(Kelebek)	11.9
 Tai Chi	5
 Bowling Oynamak	4.1
 Aletli Kürek	7
-Amerikan Futbolu	7.1
+Amerikan Futbolu    7.1
 Merdiven Çıkmak 6
 Güreşmek    6.9
 Ayakta Durmak   2
