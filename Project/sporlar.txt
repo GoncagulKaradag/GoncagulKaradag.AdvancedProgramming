@@ -54,10 +54,10 @@ Tai Chi	5
 Bowling Oynamak	4.1
 Aletli Kürek	7
 Merdiven Çıkmak	6.07
-Futbol(Amerikan)	7.1
-Güreşmek	6.09
-Ayakta Durmak	2
-Doğa Yürüyüşü	4.7
-İp Atlamak(Orta)	11
+Futbol(Amerikan)    7.1
+Güreşmek    6.09
+Ayakta Durmak   2
+Doğa Yürüyüşü   4.7
+
 
 
