@@ -58,6 +58,3 @@ Futbol(Amerikan)    7.1
 Güreşmek    6.09
 Ayakta Durmak   2
 Doğa Yürüyüşü   4.7
-
-
-
