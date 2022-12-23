@@ -55,6 +55,6 @@ Bowling Oynamak	4.1
 Aletli Kürek	7
 Merdiven Çıkmak	6.07
 Futbol(Amerikan)    7.1
-Güreşmek    6.09
-Ayakta Durmak   2
-Doğa Yürüyüşü   4.7
+Güreşmek	6
+Ayakta Durmak	2.1
+Doğa Yürüyüşü	4.7
