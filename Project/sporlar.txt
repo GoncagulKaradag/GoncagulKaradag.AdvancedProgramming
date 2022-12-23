@@ -54,7 +54,7 @@ Tai Chi	5
 Bowling Oynamak	4.1
 Aletli Kürek	7
 Merdiven Çıkmak	6.07
-Futbol(Amerikan)    7.1
+Futbol(Amerikan)	9.6
 Güreşmek	6
 Ayakta Durmak	2.1
 Doğa Yürüyüşü	4.7
