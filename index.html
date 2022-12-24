@@ -1,185 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#eb95c496">
-    <meta name="Description" content="">
-    <link rel="manifest" href="manifest.json">
-    <link rel="shortcut icon" sizes="300x300" href="logoyeni.png">
-    <link rel="icon" sizes="300x300" href="logoyeni.png">
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker
-                .register('sw.js')
-                .then((reg) => { console.log('SW Registered', reg) })
-                .catch(console.log)
-        }
-    </script>
-    <style>
-      body {
-    margin: 0 auto;
-    font: 15px/19px Arial;
-    background-color: hsla(327, 68%, 75%, 0);
-  
-}
-h3 {
-    padding: 0; 
-    margin: 0; 
-    border: none; 
-}
-header {
-    height: 80px;
-    display: flex;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #311057;
-}
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-style: hidden;
-}
-header img {
-    float: left;
-   
-}
-li{
-  font-weight: bold;
-}
-header h3 {
-    float: left;
-    padding: 5px 0;
-    font-size: 18px;
-    margin-left: 15px;
-}
-.container {
-    width: 400px;
-    margin: 0 auto;
-    height: inherit;
-    border-style: double;
-}
-.links {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    background-color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.links h3 {
-    padding: 5px 0;
-    font-size: 20px;
-    color: #311057;
-    padding-bottom: 0;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.links h3:first-child {
-    padding-top: 10px;
-}
-.links p:first-child {
-    margin-top: 0;
-    padding-top: 15px;
-}
-.links p:last-child {
-    margin-bottom: 0;
-    padding-bottom: 15px;
-}
-.links ul {
-    margin-top: 0;
-    padding-top: 0;
-    list-style: none;
-    padding: 10px 5px;
-    margin-left: 15px;
-}
-.links ul hr {
-    width: 400px;
-    margin-left: -20px;
-}
-.links ul:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-}
-.links ul li {
-    padding: 5px 0;
-}
-.links ul li a {
-    color: #9c2aa7;
-    font-weight: bold;
-    text-decoration: none;
-}
-.links ul li a:hover {
-    color: #831586;
-}
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="logom.png">
+    <title>Goncagül Karadağ</title>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
 
-.inspector {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-pre {
-    width: 400px;
-    margin: 10px auto;
-}
-    </style>
-    <title>Adv Prog - Homepage</title>
+  <script type="text/javascript" charset="UTF-8"></script><style>
+    body { max-width: 440px; }
+    th,td{
+        border: 2px solid black;
+        padding: 5px;
+    }
+    img{
+        width: 220px;
+        height: 200px;
+    }
+    a {
+        color: rgb(187, 53, 154);
+        text-decoration: none;
+        display: inline-block;
+      }
+    a:hover, a:active{
+        color: #25011ee1;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      tr:nth-child(even){background-color: #bd90b5}
+      
+      th {
+        background-color: #3a0337;
+        color: white;
+      }
+  </style>
 </head>
+
 <body>
-    <header>
-        <div style="display:flex;" class="container">
-            
-            <img src="logom.png" style="float:left; margin-left: -130px;" height="70"/>
-         
-            <h3 style="float:left;">Advanced Programming Techniques</h3>
+<h1>Advanced Programming Techniques</h1>
+<img src="logoyeni.png" alt="logo">
+<hr>
 
-        </div>
-    </header>
-    <div class="links">
-        <div class="container">
-            <br>
-            <h3>GitHub </h3>
-            <ul>
-                <li><a href="https://github.com/GoncagulKaradag/GoncagulKaradag.AdvancedProgramming" target="_blank">Goncagül Karadağ - My Repository -    </a></li>
-                <li><a href="https://github.com/GoncagulKaradag" target="_blank">Goncagül Karadağ - My GitHub Account -    </a></li>
-            </ul>
-            <hr>
-            <br>
-            <h3>Class Works</h3>
-            <ul>
-                <li>CW0 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW0/">Browser tools</a></li>
-                <li>CW1 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW1/">IBAN Verification</a></li>
-                <li>CW2 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW2/">Text to Object</a></li>
-                <li>CW3 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW3/">Object Inspector</a></li>
-                <li>CW4 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW4/">Fetching Remote Files</a></li>
-                <li>CW5 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW5/">Event Listeners</a></li>
-                <li>CW6 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW6/">Github Users API</a></li>
-                <li>CW7 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW7/">Open Weather API</a></li>
-                <li>CW8 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW8/">Open Maps API</a></li>
-                <li>CW9 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW9/">Image Inspector</a></li>
-                <br>
-                <hr>
-                <br>
-                <h3>Homeworks</h3>
-                <br>
-                <li>HW1 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/HW1/chap4.html">Array Methods</a></li>
-                <li>HW2 - <a href="https://github.com/GoncagulKaradag/GoncagulKaradag.AdvancedProgramming"> Organize private repo</a></li>
-                <li>HW3 - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/HW3/">Fetch and Animations</a></li>
-                 <br>
-                 <br>
-                 <br>
-                 <hr>
-                 <h3>Term Project</h3>
-                 <br>
-                 <li>Term Project - <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/Project/index.html">Kalori Takip Ve Sağlık Uygulaması</a></li>
+<h2>Goncagül Karadağ</h2>
+<h2>Ç1721231002</h2>
 
-            </ul>
 
-        </div>
-    </div>
+<hr>
+<h2>Repository</h2>
+<table>
+    <tr>
+        <th>Github Account</th>
+
+        <th>Repository Link</th>
+    </tr>
+    <tr>
+      <td> <a href="https://github.com/GoncagulKaradag">My Github Account</a> </td>
+          
+      <td>
+          <a href="https://github.com/GoncagulKaradag/GoncagulKaradag.AdvancedProgramming">My Repository</a> 
+      </td>
+    </tr>
+  
+  </table>
+
+  <hr>
+<h2>Class Works</h2>
+
+<div id = "wrapper"></div>
+
+<table>
+  <tr>
+      <th>Class Works</th>
+      <th>links</th>
+  </tr>
+  <tr>
+    <td>CW0</td>
+    <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW0/">Browser Tools</a>
+    </td>
+  </tr>
+  <tr>
+      <td>CW1</td>
+      <td>
+          <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW1/">IBAN Verification</a> 
+      </td>
+  </tr>
+
+  <tr>
+      <td>CW2</td>
+      <td>
+          <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW2/">Text to Object</a> 
+      </td>
+  </tr>
+  <tr>
+    <td>CW3</td>
+    <td>
+        <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW3/">Object Inspector</a> 
+    </td>
+</tr>
+<tr>
+  <td>CW4</td>
+  <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW4/">Fetching Remote Files</a> 
+  </td>
+</tr>
+
+<tr>
+  <td>CW5</td>
+  <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW5/">Event Listeners</a> 
+  </td>
+</tr>
+
+
+<tr>
+  <td>CW6</td>
+  <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW6/">Github Users API</a> 
+  </td>
+</tr>
+
+<tr>
+    <td>CW7</td>
+    <td>
+        <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW7/">Open Weather API</a> 
+    </td>
+  </tr>
+
+<tr>
+  <td>CW8</td>
+  <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW8/">Open Maps API</a> 
+  </td>
+</tr>
+
+
+<tr>
+  <td>CW9</td>
+  <td>
+      <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/CW9/">Image Inspector</a> 
+  </td>
+</tr>
+
+
+
+
+
+</table>
+<hr>
+<h2>Homeworks</h2>
+
+<table>
+    <tr>
+        <th>Homework</th>
+        <th>links</th>
+    </tr>
+    <tr>
+      <td>HW1</td>
+      <td>
+          <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/HW1/chap4.html">Array Methods</a> 
+      </td>
+    </tr>
+
+    <tr>
+      <td>HW2</td>
+      <td>
+          <a href="https://github.com/GoncagulKaradag/GoncagulKaradag.AdvancedProgramming">Organize Private Repo</a> 
+      </td>
+    </tr>
+
+    <tr>
+        <td>HW3</td>
+        <td>
+            <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/HW3/">Fetch and Animations</a> 
+        </td>
+      </tr>
+    </table> 
+    <hr>
+<h2>Projects</h2>
+      <table>
+        <tr>
+            <th>Projects</th>
+            <th>links</th>
+        </tr>
+    <tr>
+      <td>Term Project</td>
+      <td>
+          <a href="https://goncagulkaradag.github.io/GoncagulKaradag.AdvancedProgramming/Project/index.html">Kalori Takip Ve Sağlık Uygulaması</a> 
+      </td>
+    </tr>
+    
+
+     </table>
+  
+  
+<hr>
 
 </body>
+<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
 </html>
